@@ -1,0 +1,53 @@
+Dynamic Filtering
+Dexter Framework and Transactions Implementation
+
+Bailey Butler
+26 Oct 2023
+bailey.butler@anz.com
+https://github.com/baely
+
+* Motivation
+
+On various occassions during June and July we failed to process a number of Transactions across particular merchants.
+
+As a result we need to reprocess the raw Transaction data.
+
+In its currect state, we could only narrow the scope of a replay down to the date.
+
+The last time Transactions did a replay of any capacity, it was a full replay of ~13M transactions. In the last 24 hours we processed over 25M transactions.
+
+* Possible filter solutions
+
+*Hardcode*
+
+Explicit and readable but rigid and inflexible
+
+.code snippets/hardcode.java
+
+*Dynamic*
+
+Cool, impressive, wow
+
+.code snippets/dynamic.yaml
+
+.code snippets/dynamic.java
+
+* Dexter Filter
+
+* Demo
+
+.code snippets/abomination.jsh /START SEG1/,/END SEG1/
+
+.code snippets/abomination.yaml
+
+.play snippets/abomination.jsh /START SEG2/,/END SEG2/
+
+* Demo
+
+.code snippets/abomination2.jsh /START SEG1/,/END SEG1/
+
+.code snippets/abomination2.yaml
+
+.play snippets/abomination2.jsh /START SEG2/,/END SEG2/
+
+* Transactions Implemtation

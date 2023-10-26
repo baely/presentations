@@ -1,0 +1,4 @@
+filters:
+  - field: description
+    filter: contains
+    value: Pay
